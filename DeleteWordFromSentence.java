@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ 
+/**
+ * Java Program to Delete Vowels from String
+ */
+public class DeleteWordFromSentence {
+    public static void main(String args[]) {
+        String sentence, word;
+        Scanner scanner = new Scanner(System.in);
+ 
+        System.out.println("Enter a Sentence");
+        sentence = scanner.nextLine();
+ 
+        System.out.println("Enter word you want to delete from Sentence");
+        word = scanner.nextLine();
+        // Deleting word from
+        sentence = sentence.replaceAll(word, "");
+ 
+        System.out.println("Output Sentence\n" + sentence);
+    }
+}
